@@ -9,7 +9,7 @@ import { PageErrorComponent } from './pages/page-error/page-error.component';
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
   { path: 'sobre', component: SobreComponent },
-  { path: '404', component: PageErrorComponent },
+  { path: '**', component: PageErrorComponent }, // Uma das maneiras de tratar a rota coringa, caso a rota mencionada no browse não exista
 ];
 
 @NgModule({
