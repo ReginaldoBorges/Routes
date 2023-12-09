@@ -19,12 +19,12 @@ export class SobreComponent implements OnInit {
       console.log(res['id'], res['username'], res)
     );
 
-    setInterval(() => {
-      // Redirecionamento sem usar o reload da página, como se fosse um clique (mais recomendado)
-      this.router.navigate(['404']);
+    // setInterval(() => {
+    //   // Redirecionamento sem usar o reload da página, como se fosse um clique (mais recomendado)
+    //   this.router.navigate(['404']);
 
-      // Redirecionamento usando o reload da página (analisar a necessidade)
-      // this.router.navigateByUrl('404');
-    }, 5000);
+    //   // Redirecionamento usando o reload da página (analisar a necessidade)
+    //   // this.router.navigateByUrl('404');
+    // }, 5000);
   }
 }

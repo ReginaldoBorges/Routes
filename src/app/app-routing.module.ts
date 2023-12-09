@@ -16,6 +16,11 @@ const routes: Routes = [
       { path: 'borges', component: SobreComponent },
     ],
   },
+  {
+    path: 'dashboard',
+    loadChildren: () =>
+      import('./dashboard/dashboard.module').then((m) => m.DashboardModule),
+  },
   { path: '404', component: PageErrorComponent }, // Uma das maneiras de tratar a rota coringa, caso a rota mencionada no browse não exista
   { path: '**', component: PageErrorComponent }, // Uma das maneiras de tratar a rota coringa, caso a rota mencionada no browse não exista
 ];
