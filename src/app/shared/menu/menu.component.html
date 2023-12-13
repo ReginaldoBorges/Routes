@@ -1,0 +1,32 @@
+<header>
+  <h1>Título1</h1>
+  <h1>Título2</h1>
+  <nav>
+    <ul>
+      <li>
+        <a
+          [routerLink]="['/']"
+          [routerLinkActive]="['active']"
+          [routerLinkActiveOptions]="{ exact: true }"
+          >Home</a
+        >
+      </li>
+      <li>
+        <a [routerLink]="['/sobre']" [routerLinkActive]="['active']">Sobre</a>
+      </li>
+      <li>
+        <a [routerLink]="['/dashboard']" [routerLinkActive]="['active']"
+          >Dashboard</a
+        >
+      </li>
+      <li>
+        <a
+          [routerLink]="['/404']"
+          [routerLinkActive]="['active']"
+          [routerLinkActiveOptions]="{ exact: true }"
+          >Error</a
+        >
+      </li>
+    </ul>
+  </nav>
+</header>
